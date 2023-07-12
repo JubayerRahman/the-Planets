@@ -1,0 +1,152 @@
+.navbar{
+    background-color: #070722;
+    color: white;
+    width: 100%;
+    padding: 15px; margin: 0px; padding-top: 0px;
+    display: flex; align-items: center; justify-content: space-between;
+    filter: drop-shadow(0px 0px 4px gray);
+}
+.navBtns{
+    display: flex; align-items: center; justify-content: space-evenly;
+}
+.navBtns button, .mobileNavbtn button, .mobileNavbtnShow button{
+    font-size: 20px;
+    padding: 20px;
+    background-color: transparent; color: white;
+    font-family: 'Antonio', sans-serif; cursor: pointer;
+    border: none; text-transform: uppercase; margin: 0%;
+}
+.mobileNavbtn, .mobileNavbtnShow{
+    display: none;
+}
+.navBtns div{
+    margin: 0%; padding: 0;
+}
+.mercuryHover, .venusHover, .earthHover, .marsHover, .jupiterHover, .saturnHover, .uranusHover, .neptuneHover{
+    content: "";
+    height: 5px; width: 0%; border-radius: 10px;
+    margin: 0%; padding: 0%; transition: 0.3s ease-out; margin-top: -5px; margin-bottom: 5px;
+}
+.mercuryHover{
+    background-color: #419EBB;
+}
+.venusHover{
+    background-color: #EDA249;
+}
+.earthHover{
+    background-color: #6D2ED5;
+}
+.marsHover{
+    background-color: #D14C32;
+}
+.jupiterHover{
+    background-color: #D83A34;
+}
+.saturnHover{
+    background-color: #CD5120;
+}
+.uranusHover{
+    background-color: #1EC1A2;
+}
+.neptuneHover{
+    background-color: #2D68F0;
+}
+.mercuryBtn:hover .mercuryHover, .venusBtn:hover .venusHover, .earthBtn:hover .earthHover, .marsBtn:hover .marsHover,
+.jupiterBtn:hover .jupiterHover, .saturnBtn:hover .saturnHover, .uranusBtn:hover .uranusHover, 
+.neptuneBtn:hover .neptuneHover {
+    width: 100%;
+    color: #419EBB;
+}
+.navbar h2{
+    cursor: pointer;
+    font-family: 'Antonio', sans-serif;
+}
+.burger{
+    display: none;
+}
+.dev{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Antonio', sans-serif; cursor: pointer;
+    margin-bottom: 10px;
+}
+.dev a{
+    text-decoration: none;
+    color: #EDA249;
+}
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        filter: drop-shadow(0px 0px 0px);
+    }
+    /* .navBtns button, .mobileNavbtn button, .mobileNavbtnShow button{
+        font-size: 15px;
+        padding: 10px;
+        background-color: transparent; color: white;
+        font-family: 'Antonio', sans-serif; cursor: pointer;
+        border: none; text-transform: uppercase; margin: 0%;
+    } */
+}
+@media (max-width:767px){
+    .navbar{
+        display: flex; align-items: center; flex-direction: row;
+        overflow: none; z-index: 10;
+        height: 12vh;
+        /* filter: drop-shadow(0px 0px 3px gray); */
+        padding-top: 15px;
+        position: fixed;
+    }
+    .navBtns{
+        display: none;
+    }
+    .burger{
+        display: block; font-size: 20px; color: white; padding: 10px;
+        background-color: transparent; border: none;
+    }
+    .mobileNavbtn{
+        display: block;
+        visibility: hidden;
+        width: 50%;
+        background-color:#070722;
+        margin-left: -100%;
+        transition: all 0.3s ease-out; padding: 0%;
+        z-index: 9;
+        position: fixed;
+        top: 10%;
+    }
+    .mobileNavbtnShow button{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .mobileNavbtnShow{
+        height: 100vh;
+        display: block;
+        visibility: visible;
+        background-color: #070722;
+        width: 60%;
+        margin-left: 0%;
+        margin-top: 0%; padding-top: 2%;
+        transition: all 0.3s ease-out;
+        z-index: 9;
+        position: fixed;
+        padding-top: 15vh;
+        overflow-y: scroll;
+        filter: drop-shadow(0px 0px 3px black);
+    }
+    .mobileNavbtnShow button{
+        border-bottom: 2px solid gray;
+        width: 100%;
+        text-align: left;
+    }
+    .dev{
+        margin-top: 20px;
+        color: white;
+        font-family: 'Antonio', sans-serif; cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .dev a{
+        text-decoration: none;
+        color: #EDA249;
+    }
+}

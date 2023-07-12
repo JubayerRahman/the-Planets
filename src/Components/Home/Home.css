@@ -1,0 +1,141 @@
+.home{
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background-color: #070722;
+        color: white;
+}
+.planetImages{
+        width: 49vw;
+        display: flex; flex-direction: column; align-items: center; justify-content:center ;
+}
+.mercuryImgShow,.mercuryIntShow,.mercuryGroShow, 
+.vnsuImgShow, .vnsuIntShow, .vnsuGeoShow,
+.earthImgShow, .earthIntShow, .earthGeoShow,
+.marImgShow, .marIntShow, .marGeoShow, 
+.jupiterImgShow, .jupiterIntShow,.jupiterGeoShow, 
+.saturnImgShow, .saturnIntShow,.saturnGeoShow,
+.uranusImgShow, .uranusIntShow,.uranusGeoShow,
+.neptuneImgShow, .neptuneIntShow, .neptuneGeoShow {
+        display: block;
+}
+.mercuryImgHide,.mercuryIntHide,.mercuryGroHide, 
+.vnsuImgHide,.vnsuIntHide,.vnsuGeoHide,
+.earthImgHide, .earthIntHide, .earthGeoHide,
+.marImgHide, .marIntHide, .marGeoHide,
+.jupiterImgHide, .jupiterIntHide, .jupiterGeoHide,
+.saturnImgHide, .saturnIntHide, .saturnGeoHide,
+.uranusImgHide, .uranusIntHide, .uranusGeoHide,
+.neptuneImgHide, .neptuneIntHide, .neptuneGeoHide{
+        display: none;
+}
+.mainPlantPagelayout{
+        display: flex;
+}
+.sningedatatemplate{
+        padding: 20px;
+        width: 45vw;
+}
+.sningedatatemplate p{
+        margin-top: 20px;
+        line-height: 30px;
+        font-weight: 200;
+}
+.planetDataBtns{
+        display: flex; flex-direction: column;
+        width: 40vw;
+        margin-bottom: 50px;
+}
+.showDataBtn{
+        background-color: rgb(65, 158, 187);
+        color: #070722;
+        margin-top: 30px;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        border: 2px solid #38384F;
+        text-align: left;
+        cursor: pointer;
+        padding-bottom: 10px;
+}
+.hideDataBtn{
+        margin-top: 30px;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        border: 2px solid #38384F;
+        background-color: transparent;
+        text-align: left;
+        cursor: pointer;
+        padding-bottom: 10px;
+}
+.keyPoints{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 50px;
+}
+.homeBoxs{
+        border: 2px solid #38384F;
+        padding: 15px;
+        width: 300px;
+}
+.homeBoxs p{
+        font-size: 14px;
+        color: lightgray;
+}
+.planetLinks{
+        color: lightgray;
+        font-size: 16px;
+        margin-top: 20px;
+}
+.plaetSource{
+        color: gray;
+        letter-spacing: 2px;
+        font-size: 16px;
+}
+@media (max-width:768px) {
+        .mainPlantPagelayout{
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+        }
+        .sningedatatemplate{
+                width: 100vw;
+                text-align: center;
+        }
+        .sningedatatemplate p{
+                font-weight: 200;
+        }
+        .planetImages{
+                margin-top: 20vh;
+        }
+        .planetImages img{
+                width: 80vw;
+        }
+        .planetDataBtns{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                left: 0px;
+                justify-content: space-evenly;
+                position: fixed;
+                top: 8vh;
+                background-color: #070722;
+                margin: 0px; padding: 0%;
+                filter: drop-shadow(0px 0px 4px gray);
+        }
+        .planetDataBtns button{
+                font-size: 14px;
+                padding: 5px;
+                width: 30vw;
+                text-align: center;
+                border: none;
+        }
+        .keyPoints{
+                flex-direction: column;
+                align-items: center;
+        }
+        .homeBoxs{
+                margin-bottom: 10px;
+                width: 90vw;
+        }
+}
